@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": " eslint models/**/**/**/*.js --fix && eslint routes/**/**/**/*.js --fix && eslint passport.js --fix && eslint server.js --fix",
     "prettier": "prettier --write .",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
