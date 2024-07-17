@@ -6,8 +6,16 @@ const JWT = require("jsonwebtoken");
 const Users = require("../models/users.model");
 const crypto = require("crypto");
 const bcrypt = require("bcryptjs");
-const { WEBSITE_URL, maillerConfig } = require("../../config");
-
+// const { WEBSITE_URL, maillerConfig } = require("../../config");
+// const {WEBSITE_URL,maillerConfig} = require('.././config')
+const WEBSITE_URL= "http://yourwebsite.com"
+const maillerConfig= {
+     service: "Gmail",
+     auth: {
+       user: "your-email@gmail.com",
+       pass: "your-email-password"
+     }
+   }
 require("dotenv").config();
 
 const BCRYPT_SALT_ROUNDS = 10;
